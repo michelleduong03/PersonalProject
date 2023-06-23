@@ -1,8 +1,7 @@
 
 html, body, * {
     -webkit-app-region: drag;
-    -webkit-user-select: none;
-    cursor: default;
+    
 }
 
 body {
@@ -96,7 +95,7 @@ body {
 
 .current-song-cover img{
     position: absolute;
-    width: 80%;
+    width: 100%;
     bottom: 400px;
 
 }
