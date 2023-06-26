@@ -95,8 +95,8 @@ body {
 
 .current-song-cover img{
     position: absolute;
-    width: 100%;
-    bottom: 400px;
+    width: 90%;
+    bottom: 140px;
 
 }
 
@@ -130,4 +130,20 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #434343;
+    border-radius: 20px;
+    color: white;
+}
+
+.playlist-top-email span {
+    padding: 0 20px 0 0;
+}
+
+.playlist-top-email .arrow-container {
+    background-color: #545354;
+}
+
+.playlist-header {
+    background: rgb(239,239,238);
+background: linear-gradient(180deg, rgba(239,239,238,1) 0%, rgba(120,120,121,1) 100%);
 }
