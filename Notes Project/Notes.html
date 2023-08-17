@@ -1,104 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body {font-family: Arial, Helvetica, sans-serif}
-    form {border: 3px solid #f1f1f1}
-
-    input [type=text], input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-
-    button {
-        background-color: #EACAC6;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-    }
-
-    button:hover {
-        opacity: 0.8;
-    }
-
-    .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #ce7978;
-    }
-
-    .login {
-        padding: 16px;
-    }
-
-    span.pswd {
-        float: right;
-        padding-top: 16px;
-    }
-
-    @media screen and (max-width: 300px) {
-        span.pswd {
-            display: block;
-            float: none;
-        }
-
-        .cancelbtn {
-            width: 100%
-        }
-    }
-
-    .login-pic {
-        text-align: center;
-        margin: 24px 0 12px 0;
-    }
-
-    img.avatar {
-        width: 30%;
-        border-radius: 50%;
-    }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Login</title>
+    <link rel="stylesheet" href="Notes.css">
 </head>
 <body>
-    <h2>-NOTES-</h2>
+    <div class="container">
+        <h1 class="title">Notes Login</h1>
+        <form class ="login" action="WriteNotes.html" method="post" name="form" onsubmit="return validateForm()">
+            <div class="font-email">Email</div>
+            <input autocomplete="on" type="text" name="email">
+            <div id="email-error">Please enter your email.</div>
+            <div class="font-password">Password</div>
+            <input type="password" name="password">
+            <div id="password-error">Please enter your password.</div>
+            <button type="submit" onclick="Login ()">Login</button>
+            <div class="signUp">
+                Don't have an account?
 
-    <script src = "Notes.js"></script>
-
-    <form action="/action_page.php" method="post">
-        <div class="login-pic">
-            <img src="https://media.istockphoto.com/id/1053204052/vector/cute-samoyed-dog-cartoon-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=zwRLiSAuB4C8GrMFlGCiqx8ECoQ3jt_D7rMHXEbR4Hw=" class="avatar">
-        </div>
-
-
-        <div class="login">
-            <label for="user"></label><b>Username</b></label>
-            <br>
-            <input type="text" placeholder="Enter Username" name="user">
-            <br> <br>
-
-            <label for="pswd"></label><b>Password</b></label>
-            <br>
-            <input type="text" placeholder="Enter Password" name="pswd">
-
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-
-        <div class="login" style="background-color: white;">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="pswd">Forgot<a href="#"> password?</a></span>
-        </div>
-    </form>
-
+            </div>
+    </div>
+    <script src="Notes.js">  </script>
 </body>
 </html>
