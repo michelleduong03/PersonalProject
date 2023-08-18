@@ -3,6 +3,7 @@ var pass = document.forms ['form']['password'];
 var errorEmail = document.getElementById('email-error');
 var errorPass = document.getElementById('password-error');
 
+
 email.addEventListener('textInput', emailValidation);
 pass.addEventListener('textInput', passValidation);
 
@@ -39,6 +40,15 @@ function passValidation () {
 }
 
 function Login () {
-    localStorage.setItem ("email", email.value);
-    localStorage.setItem ("pass", pass.value);
+    const email = document.getElementById('email');
+    const pass = document.getElementById('password');
+    const enteredEmail = email.value;
+    const enteredPass = pass.value;
+
+    const userData = {
+        email: enteredEmail,
+        password: enteredPass
+    };
+
+    localStorage.setItem ("userData", JSON.stringify(userData));
 }
