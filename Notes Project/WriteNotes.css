@@ -15,11 +15,14 @@ body {
 
 .container-notes h1 {
     font-size: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
 }
 
 .container-notes button {
     height: 45px;
-    width: 100px;
+    width: 162px;
     font-size: 20px;
     color: white;
     outline: none;
@@ -29,5 +32,27 @@ body {
     border-radius: 3px;
     border: 1px peachpuff;
     transition: .5s;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 2px;
+}
+
+.input img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    
 }
 
