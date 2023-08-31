@@ -27,6 +27,7 @@ function emailValidation () {
     if (email.value.length >= 8) {
         email.style.border = "1px solid white";
         errorEmail.style.display = "none";
+        localStorage.setItem("email");
         return true;
     }
 }
@@ -35,6 +36,7 @@ function passValidation () {
     if (pass.value.length >= 5) {
         pass.style.border = "1px solid white";
         errorPass.style.display = "none";
+        localStorage.setItem("password");
         return true;
     }
 }
