@@ -41,3 +41,7 @@ document.addEventListener("keydown", event => {
         event.preventDefault();
     }
 })
+
+function logout () {
+    window.location.href = "Notes.html";
+}

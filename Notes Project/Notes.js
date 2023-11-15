@@ -55,5 +55,4 @@ function Login () {
     if (email == enteredEmail && pass == enteredPass) {
         localStorage.setItem ("userData", JSON.stringify(userData));
     }
-
 }
