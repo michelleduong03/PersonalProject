@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes Login</title>
-    <link rel="stylesheet" href="Notes.css">
+    <link rel="stylesheet" href="SignUp.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Notes Login</h1>
+        <h1 class="title">Notes SignUp</h1>
         <form class ="login" action="WriteNotes.html" method="post" name="form" onsubmit="return validateForm()">
             <div class="font-email">Email</div>
             <input autocomplete="on" type="text" id="email">
@@ -16,9 +16,12 @@
             <div class="font-password">Password</div>
             <input type="password" id="password">
             <div id="password-error">Please enter your password.</div>
+            <div class="font-password">Re-enter password</div>
+            <input type="password" id="password">
+            <div id="password-error">Please enter your password.</div>
             <button type="submit" onclick="Login ()">Login</button>
             <div class="signup-box">
-                <p>Don't have an account? <a href="SignUp.html">Sign up here!</a></p>
+                <p>Already have an account? <a href="Notes.html">Go to login</a></p>
             </div>
     </div>
     
