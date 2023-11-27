@@ -1,4 +1,4 @@
-const notesContainer = document.querySelector(".notes");
+const notesContainer = document.querySelector(".notes-grid");
 const button = document.querySelector(".button");
 let notes = document.querySelectorAll (".input");
 
